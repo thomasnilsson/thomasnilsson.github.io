@@ -1,5 +1,5 @@
 ## Who am I?
-My name is Thomas, and I'm a computer science student at The Technical University of Denmark (DTU).
+My name is Thomas Nilsson, and I'm an engineering student at The Technical University of Denmark (DTU).
 
 ## Projects and Courses
 [Social Data Analysis and Visualization](https://thomasnilsson.github.io/02806)
