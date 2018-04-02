@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+## Projects and Courses
 
-You can use the [editor on GitHub](https://github.com/thomasnilsson/thomasnilsson.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+[Social Data Analysis and Visualization](https://thomasnilsson.github.io/02806)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Cryptology 1](https://thomasnilsson.github.io/Cryptology)
 
-### Markdown
+[ML: Handwritten Digits Prediction (Python)](https://nbviewer.jupyter.org/github/thomasnilsson/JupyterNotebooks/blob/master/CS50%20Intro%20to%20ML%20%28SciKit%29.ipynb)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[ML: KNN (Python)](http://nbviewer.jupyter.org/github/thomasnilsson/JupyterNotebooks/blob/master/K-Nearest-Neighbours.ipynb)
 
-```markdown
-Syntax highlighted code block
+[Stat: Happiness/GDP Correlation (Python)](http://nbviewer.jupyter.org/github/thomasnilsson/JupyterNotebooks/blob/master/Happiness%20Analysis.ipynb)
 
-# Header 1
-## Header 2
-### Header 3
+[Country Overview - Angular](https://thomasnilsson.github.io/flagapp)
 
-- Bulleted
-- List
+## About Me
+My name is Thomas, and I'm a computer science student at The Technical University of Denmark (DTU).
 
-1. Numbered
-2. List
+##### Education:
+BSc Computer Science (2014-2017)
+* Thesis: iOS application for diagnosing Sleep Apnea.
+* Supervisors: Helge D. Sørensen PhD & Poul Jennum Dr. Med.
 
-**Bold** and _Italic_ and `Code` text
+MSc Computer Science (2017-2019)
+* Focus on Software Development and Data Analysis
 
-[Link](url) and ![Image](src)
-```
+##### Skillset:
+* Mobile App Development
+* Web Development
+* Data Visualization for the Web
+* Data Analysis
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thomasnilsson/thomasnilsson.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+##### Programming Languages:
+* Python + Python Flask
+* JavaScript (Angular, JQuery, D3)
+* Java (Android)
+* Swift (iOS)
+* PHP, MATLAB, Linux Bash, C
