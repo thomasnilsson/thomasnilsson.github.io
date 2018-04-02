@@ -4,15 +4,13 @@ My name is Thomas, and I'm a computer science student at The Technical Universit
 ## Projects and Courses
 [Social Data Analysis and Visualization](https://thomasnilsson.github.io/02806)
 
-[Cryptology 1](https://thomasnilsson.github.io/Cryptology)
-
 [ML: Handwritten Digits Prediction (Python)](https://nbviewer.jupyter.org/github/thomasnilsson/JupyterNotebooks/blob/master/CS50%20Intro%20to%20ML%20%28SciKit%29.ipynb)
 
 [ML: KNN (Python)](http://nbviewer.jupyter.org/github/thomasnilsson/JupyterNotebooks/blob/master/K-Nearest-Neighbours.ipynb)
 
 [Stat: Happiness/GDP Correlation (Python)](http://nbviewer.jupyter.org/github/thomasnilsson/JupyterNotebooks/blob/master/Happiness%20Analysis.ipynb)
 
-[Country Overview - Angular](https://thomasnilsson.github.io/flagapp)
+[Country Overview - Angular](https://thomasnilsson.github.io/flagproject/)
 
 ## Education:
 MSc Data Science (2017-2019)
