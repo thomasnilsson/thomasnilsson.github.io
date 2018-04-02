@@ -1,5 +1,7 @@
-## Projects and Courses
+## Who am I?
+My name is Thomas, and I'm a computer science student at The Technical University of Denmark (DTU).
 
+## Projects and Courses
 [Social Data Analysis and Visualization](https://thomasnilsson.github.io/02806)
 
 [Cryptology 1](https://thomasnilsson.github.io/Cryptology)
@@ -12,26 +14,25 @@
 
 [Country Overview - Angular](https://thomasnilsson.github.io/flagapp)
 
-## About Me
-My name is Thomas, and I'm a computer science student at The Technical University of Denmark (DTU).
+## Education:
+MSc Data Science (2017-2019)
+* ML, Data Analysis, Software Development
+* Exchange at ETH Zürich 
 
-##### Education:
 BSc Computer Science (2014-2017)
 * Thesis: iOS application for diagnosing Sleep Apnea.
 * Supervisors: Helge D. Sørensen PhD & Poul Jennum Dr. Med.
 
-MSc Computer Science (2017-2019)
-* Focus on Software Development and Data Analysis
-
-##### Skillset:
+## Skillset:
 * Mobile App Development
 * Web Development
 * Data Visualization for the Web
-* Data Analysis
+* Data Analysis and APIs
 
-##### Programming Languages:
-* Python + Python Flask
-* JavaScript (Angular, JQuery, D3)
+## Programming Languages:
+* JS: _D3, React, JQuery, Angular_
+* Python & Python Flask
+* PHP
 * Java (Android)
 * Swift (iOS)
-* PHP, MATLAB, Linux Bash, C
+* Other: _MATLAB, Linux Bash, C_
