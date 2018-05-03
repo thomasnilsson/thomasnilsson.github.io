@@ -2,6 +2,8 @@
 My name is Thomas Nilsson, and I'm an engineering student at The Technical University of Denmark (DTU).
 
 ## Projects and Courses
+[Oticon Audio Explorers (2018)](https://thomasnilsson.github.io/Oticon2018)
+
 [Social Data Analysis and Visualization](https://thomasnilsson.github.io/02806)
 
 [ML: Handwritten Digits Prediction (Python)](https://nbviewer.jupyter.org/github/thomasnilsson/JupyterNotebooks/blob/master/CS50%20Intro%20to%20ML%20%28SciKit%29.ipynb)
