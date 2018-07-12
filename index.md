@@ -17,8 +17,8 @@ My name is Thomas Nilsson, and I'm an engineering student at The Technical Unive
 [Web: Country Overview - Angular JS ](https://thomasnilsson.github.io/flagproject/)
 
 ## Education:
-MSc Data Science (2017-2019)
-* ML, Data Analysis, Software Development
+MSc Computer Science - Data Science (2017-2019)
+* Taking various ML and data science courses.
 * Exchange at ETH Zürich 
 
 BSc Computer Science (2014-2017)
