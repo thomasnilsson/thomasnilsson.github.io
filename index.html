@@ -2,138 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>NYC Motor Vehicle Collisions</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Prevents stupid favicon error in JS Console -->
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/md/github-markdown.css">
+	<meta charset="utf-8">
+	<title>Thomas Nilsson's Page</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- Prevents stupid favicon error in JS Console -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/md/github-markdown.css">
 </head>
 
 <body>
-    <article class="markdown-body" style="width: 1500px">
-        <b>Thomas Nilsson</b><br>
-        At the moment I am pursuing a master's
-        degree in computer science at the Technical University of Denmark (DTU).
-        <br>
-        <br>
-        Currently I am employed by The Copenhagen Center of Health Technology as a student programmer. Previously I worked on freelance mobile/web solutions
-        for health-care clinics together with a fellow student at DTU.
-        <br>
-        <br>
-        <a href="https://github.com/thomasnilsson">GitHub Account</a>
-    </article>
-    <article class="markdown-body" style="width: 1500px">
-        <h1>Cool D3 Visualisations</h1>
-        <p>These were made for a course at DTU, click <a href="https://thomasnilsson.github.io/02806/PROJECT/">here</a> for the full project.</p>
-    </article>
-    <div align="center">
-        <h3>Selected Period:
-			<i>
-				<span id="period" />
-			</i>
-		</h3>
-        <h5>
-			<b>Tip:</b>
-			<i>Brush the timeline to select a period.</i>
-		</h5>
-        <a href="https://raw.githubusercontent.com/thomasnilsson/02806/master/PROJECT/data/data_timeline.csv?token=AJB0p0dGeLoR1NNrZlPG_panW2tC6-6Dks5bAe-gwA%3D%3D">Download Timeline Dataset</a>
-        <!-- TIMELINE PLOT -->
-        <div id="containerTimeline">
-        </div>
-        <!-- CHOROPLETH GEOJSON PLOT -->
-        <div id="containerGeo" style="display:inline-block;">
-            <h5>
-				<b>Tip:</b>
-				<i>Hover over a zip-code to view stats.</i>
-			</h5>
-            <a href="https://raw.githubusercontent.com/thomasnilsson/02806/master/PROJECT/data/zipcodes.geojson?token=AJB0p01QOVur6zKClay8ilkzd42TdAc5ks5bAe-jwA%3D%3D">Download GeoJSON Dataset</a>
-            <p></p>
-            <!-- TOOLTIP: CHOROPLETH -->
-            <div class="tooltip" id="tooltipChoropleth" class="hidden">
-                <strong>
-					<p>Incidents:
-						<span id="incidentCount" />
-				</strong>
-                </p>
-                <p>Zip Code:
-                    <span id="zipCode" />
-				</p>
-				<p>Borough:
-					<span id="borough" />
-				</p>
-			</div>
-		</div>
+	<article class="markdown-body" style="width: 1500px">
 
+		<img src="cropped.jpg" style='width:200px; display: block'>
+		<h1>Thomas Nilsson</h1><br>
 
-		<!-- HISTOGRAMS -->
-		<div style="display:inline-block;">
-			<h5>
-				<b>Tip:</b>
-				<i>Hover over a bar to view stats.</i>
-			</h5>
+		<p>At the moment I am pursuing a master's
+				degree in computer science at the <a href="https://www.dtu.dk/">Technical University of Denmark (DTU)</a>. In
+				the spring of 2019 I spent an exchange semester at <a href="https://ethz.ch/de.html">ETH Zürich</a>.</p>
+		<p>Currently I am employed by The Copenhagen Center of Health Technology as a student programmer. Previously I
+				worked on freelance mobile/web solutions for health-care clinics together with a fellow student at DTU. Furthermore I am also a teaching assistant for
+				the <i>Introduction to Machine Learning and Data Mining</i> course at DTU.</p>
+		
+		<p>Previously I had my own company with a fellow student which provided web- and mobile solutions to conduct
+				patient studies which used questionnaire type data from patients.</p>
 
-			<!-- HISTOGRAM: INJURED/KILLED -->
-			<a href="https://raw.githubusercontent.com/thomasnilsson/02806/master/PROJECT/data/data_injured_histogram.csv?token=AJB0p-ApdKqx5NvYY88GCSfp9CI_y0n1ks5bAfAYwA%3D%3D">Download Injured/Killed Dataset</a>
+		<a href="https://github.com/thomasnilsson">GitHub Account</a><br>
+		<a href="https://www.linkedin.com/in/thomasnn/">LinkedIn CV</a>
 
-			<div id="containerHistogram"></div>
-
-			<!-- TOOLTIP: INJURED/KILLED -->
-			<div class="tooltip" id="tooltipInjured" class="hidden">
-				<strong>
-					<p>Time of Day
-						<span id="hourOfDayInjured" />
-				</strong>
-				<strong>
-					<p>Motorists:
-						<span id="motorists" />
-				</strong>
-				<strong>
-					<p>Pedestrians:
-						<span id="pedestrians" />
-				</strong>
-				<strong>
-					<p>Cyclists:
-						<span id="cyclists" />
-				</strong>
-
-				</p>
-			</div>
-
-			<!-- HISTOGRAM: INCIDENT COUNTS -->
-			<h5>
-				<b>Tip:</b>
-				<i>Hover over a bar to view stats.</i>
-			</h5>
-			<a href="https://raw.githubusercontent.com/thomasnilsson/02806/master/PROJECT/data/data_incident_histogram.csv?token=AJB0p3ncGtLRBog5KwLENZtkt9Yp-Ndnks5bAe-KwA%3D%3D">Download Incident Dataset</a>
-			<div id="incidentCountBox"></div>
-			<!-- TOOLTIP: INCIDENT COUNTS -->
-			<div class="tooltip" id="tooltipIncident" class="hidden">
-				<strong>
-					<p>Time of Day
-						<span id="hourOfDayIncident" />
-				</strong>
-				<strong>
-					<p>Incidents:
-						<span id="incidents" />
-				</strong>
-				</p>
-			</div>
-		</div>
-
-	</div>
-	</div>
-	</div>
-
-	<div align="center">
-		<div id="factorsBox"></div>
-	</div>
-
-
-</body>
-<script src="js/index.js"></script>
+		<h2>Cool projects</h2>
+		<p>D3 Visualizations: <a href="https://thomasnilsson.github.io/02806/PROJECT/">New York City Vehicle
+				Collisions</a></p>
+		<p>Network Analysis: <a href="https://thomasnilsson.github.io/02805-social-graphs-2018/">Yelp Elite Users in
+				Toronto</a></p>
+		<p>Sentiment Analysis: <a href="data/grad-student-descent-report.pdf">Sentiment Analysis of Twitter Data</a></p>
+		<p>Predicting the End of a Story: <a href="data/nlu_project_2.pdf">StoryCloze Task</a></p>
+		<p>MRI Heart Volume Prediction: <a href="data/qbi_slides.pdf">Predicting Heart Volume from MRI</a></p>
+	</article>
 
 </html>
