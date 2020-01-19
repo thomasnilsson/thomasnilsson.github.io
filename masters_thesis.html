@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thomas Nilsson's Page</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-Prevents stupid favicon error in JS Console -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/md/github-markdown.css">
+</head>
+
+<body>
+    <article class="markdown-body" style="width: 1500px">
+
+        <img src="img/dtulogo.png" style='height:200px; display: block'>
+        <h1>MSc Thesis: <br><i>A Flutter Package for Real-time Mobility Feature Extraction</i></h1><br>
+        <p>Student: Thomas Nilsson</p>
+        <p>Supervisor: <a href="http://www.bardram.net/">Jakob Bardram</a></p>
+
+        <h2>Abstract</h2>
+        <p>For mental health research, location data, together with a time component, both collected from the user’s
+            smartphone, can be reduced to certain behavioral features pertaining to the user’s mobility. These features
+            can be used to diagnose patients suffering from mental disorders such as depression. Previously, mobility
+            recognition has been done in an off-device fashion where features are extracted after a study was completed.
+            We propose performing mobility feature extracting in real-time on the device itself, as new data comes in a
+            continuous fashion. This trades compute power, i.e. phone battery for bandwidth and storage since the
+            reduced features take up much less space than the raw GPS data, and transforms the very intrusive GPS data
+            to abstract features, which avoids unnecessary logging of sensitive data.
+        </p>
+
+        <h2>Features</h2>
+        <p>The mobility features which will be used are derived from GPS location data as described in <a href="https://www.ncbi.nlm.nih.gov/pubmed/26640739">[Saeb15]</a>.</p>
+        <p><i>Note that ’cluster’ and ’place’ may be used interchangeably when describing features. A cluster is simply
+                the mathematical term for a collection of data points which corresponds to a place with some GPS
+                coordinates in the real world.</i></p>
+
+        <p><b>Number of Clusters:</b> This feature represents the total number of clusters found by the clustering
+            algorithm.</p>
+        <p><b>Location Variance:</b> This feature measures the variability of a participant’s location data from
+            stationary states. LV was computed as the natural logarithm of the sum of the statistical variances of the
+            latitude and the longitude components of the location data.</p>
+        <p><b>Location Entropy (LE):</b> A measure of points of interest. High entropy indicates that the participant
+            spent time more uniformly across different location clusters, while lower entropy indicates the participant
+            spent most of the time at some specific clusters.</p>
+        <p><b>Normalized LE:</b> Normalized entropy is calculated by dividing the cluster entropy by its maximum value,
+            which is the logarithm of the total number of clusters. Normalized entropy is invariant to the number of
+            clusters and thus solely depends on their visiting distribution. The value of normalized entropy ranges from
+            0 to 1, where 0 indicates the participant has spent their time at only one location, and 1 indicates that
+            the participant has spent an equal amount of time to visit each location cluster.</p>
+
+
+        <p><b>Home Stay:</b> The percentage of time the participant has been at the cluster that represents home. We
+            define the
+            home cluster as the cluster, which is mostly visited during the period between 12 am and 6 am.</p>
+        <p><b>Transition Time:</b> Transition Time measures the percentage of time the participant has been in the
+            transition
+            state.</p>
+        <p><b>Total Distance:</b> This feature measures the total distance the participant has traveled in the
+            transition
+            state.</p>
+        <p><b>Circadian Movement:</b> This feature measures to what extent the changes in a participant’s location
+            follow a
+            24-hour, or circadian, rhythm. To calculate circadian movement, we obtained the distribution of the
+            periodicity
+            of the stationary location data and then calculated the percentage of it that falls in the 24±0.5 hour
+            periodicity.</p>
+
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/26640739">[Saeb15]</a> showed that especially 4 features correlate highly with the PHQ9 score, which are Circadian
+        Movement, Location Variance, Normalized Location Entropy and Home Stay.
+
+    </article>
+
+</html>
