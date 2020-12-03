@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget planner</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-buttons slot="start">
+                    <ion-back-button></ion-back-button>
+                </ion-buttons>
+                <ion-title>Budget Planner</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="6">
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>Add Expense</ion-card-title>
+                            </ion-card-header>
+
+                            <ion-card-content>
+
+                                <ion-item>
+                                    <ion-label>
+                                        Expense Reason
+                                    </ion-label>
+                                    <ion-input type="text" id="input-reason"></ion-input>></ion-input>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label>
+                                        Expense Amount
+                                    </ion-label>
+                                    <ion-input type="number" id="input-amount"></ion-input>
+                                </ion-item>
+                                <div margin-vertical text-right>
+                                    <ion-button id="btn-add">
+                                        <ion-icon name="add-circle-outline"></ion-icon>Add
+                                    </ion-button>
+                                    <ion-button id="btn-clear" color="danger" fill="outline">
+                                        <ion-icon name="close-outline"></ion-icon>Clear
+                                    </ion-button>
+                                </div>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size-md="6">
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>Expenses</ion-card-title>
+                            </ion-card-header>
+
+                            <ion-card-content>
+                                <ion-list id="list-expenses">
+                                </ion-list>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col size-md="6">
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>Total: $<span id="total-expenses">0</ion-card-title>
+                            </ion-card-header>
+
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-content>
+    </ion-app>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
