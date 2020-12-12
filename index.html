@@ -4,176 +4,56 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Thomas Nilsson's Page</title>
+	<title>Thomas Nilsson</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<!-- Prevents stupid favicon error in JS Console -->
-	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/md/github-markdown.css">
-	<style>
-		/*basic reset*/
-		* {
-
-			box-sizing: border-box;
-		}
-
-		/* Create two unequal columns that floats next to each other */
-		.column {
-			float: left;
-			padding: 10px;
-			height: 300px;
-			/* Should be removed. Only for demonstration */
-		}
-
-		.left {
-			width: 40%;
-		}
-
-		.right {
-			width: 60%;
-		}
-
-		/* Clear floats after the columns */
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		#particles-js {
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			min-height: 100%;
-			/* background-color: #f6f9fc; */
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: 50% 50%;
-			z-index: -1;
-		}
-
-		p {
-			font-size: 14pt;
-		}
-
-		a {
-			font-size: 14pt;
-		}
-	</style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<div id="particles-js"></div>
-
-
-	<article class="markdown-body" style="height: 100%;">
-
-		<div class="row">
-			<div class="column left">
-				<img src="cropped2.jpg"
-					style='object-fit: cover; max-height: 300px; display: block; border-radius: 50%;'>
-			</div>
-			<div class="column right">
-				<p style="font-size: 35pt;">Thomas Nilsson</p>
-				<p style="font-size: 20pt;">Software engineer from Denmark 🇩🇰</p>
-				<ul>
-					<li><a style="font-size: 16pt;" href="https://github.com/thomasnilsson">GitHub</a>
-					</li>
-					<li><a style="font-size: 16pt;" href="https://www.linkedin.com/in/thomasnn/">LinkedIn</a></li>
-				</ul>
-			</div>
+	<div style="margin: auto; width: 500px; margin-top: 50px;">
+		<div style="justify-content: center;">
+			<img src="blackwhite.jpg"
+				style='height: 250px; width: 250px; display: block; border-radius: 50%; margin:auto; margin-bottom:20px'>
+			<p><b style="font-size: 25px; font-family: 'Courier New', monospace;">Thomas Nilsson</b></p>
 		</div>
 
-		<h1>About</h1>
-		<p>I am software engineer, currently employed by The Copenhagen Center of Health Technology, and have been
-			involved in Health Tech since 2017 when I started the company Edea IT with a fellow student. Through the
-			company we developed which
+		<p><b style="font-family: 'Courier New', monospace;">About</b><br>I am software engineer currently employed by
+			the
+			Danish health-tech company, <a href="https://www.monsenso.com/">Monsenso</a>. My entrance into
+			health-tech was in 2017 when I started the company <i>Edea IT</i> with a fellow student, in which we
+			developed which
 			provided web- and mobile solutions for patient studies in hospital clinics.</p>
 
-		<p>In the spring of 2020 I went abroad to TUM and 2019 I spent an exchange semester at ETH Zurich.</p>
+		<p><b style="font-family: 'Courier New', monospace;">Studying Abroad</b><br>In the spring of 2020 I studied in
+			Munich, Germany and prior to that I spent an
+			exchange semester at
+			ETH Zurich in Switzerland.</p>
 
-		<h1>Master's Thesis</h1>
-		<p>I received my Master's degree in Computer Science from the Technical University of Denmark in July 2020. The
-			thesis
-			is available here: <a href="data/msc-thesis-thomas-nilsson.pdf"><i>A Flutter Package for Real-time Mobility
-					Feature Extraction</i></a>.</p>
-		<p>The <a href="https://pub.dev/packages/mobility_features">Mobility Features</a> Flutter package has been
-			released on the dart package manager. </p>
-		<p>My supervisor was <a href="http://www.bardram.net/">Jakob
-				Bardram</a>, the director of CACHET.</p>
+		<p><b style="font-family: 'Courier New', monospace;">Master's Thesis</b><br>I carried out my Master's thesis in
+			Computer Science from the Technical University of
+			Denmark in July 2020. The resulting <a href="https://pub.dev/packages/mobility_features">Mobility
+				Features</a>
+			Flutter
+			package has since been
+			released on the dart package manager. The full thesis
+			is available <a href="data/msc-thesis-thomas-nilsson.pdf">here </a> and I wrote a Medium article on it,
+			available
+			<a
+				href="https://medium.com/@cph.cachet/flutter-package-mobility-features-in-real-time-922b1682ea4f">here</a>.
 
-
-		<!-- OPEN SOURCE -->
-		<h1>Open-source Contributions</h1>
-		<p>My main contributions are in the <a href="https://pub.dev/publishers/cachet.dk/packages">CACHET
+			<!-- OPEN SOURCE -->
+		<p><b style="font-family: 'Courier New', monospace;">Open-source Contributions</b><br>My main contributions are
+			in
+			the <a href="https://pub.dev/publishers/cachet.dk/packages">CACHET
 				Flutter
-				plugin collection</a></p>
-		<p>The packages I've implemented are:</p>
-		<ul>
-			<li><a href="https://pub.dev/packages/mobility_features">Mobility Features</a></li>
-			<li><a href="https://pub.dev/packages/health">Apple HealthKit/Google Fit</a></li>
-			<li><a href="https://pub.dev/packages/air_quality">Air Quality Index</a></li>
-			<li><a href="https://pub.dev/packages/pedometer">Pedometer</a></li>
-			<li><a href="https://pub.dev/packages/screen_state">Screen State</a></li>
-			<li><a href="https://pub.dev/packages/light">Light Sensor</a></li>
-			<li><a href="https://pub.dev/packages/noise_meter">Noise Meter</a></li>
-			<li><a href="https://pub.dev/packages/app_usage">App Usage</a></li>
-			<li><a href="https://pub.dev/packages/weather">Weather</a></li>
-			<li><a href="https://pub.dev/packages/notifications">Notifications</a></li>
-			<li><a href="https://pub.dev/packages/movisens_flutter">MoviSens</a></li>
-		</ul>
+				plugin collection</a> where I authored the very popular <a href="https://pub.dev/packages/health">Health
+				plugin.</a></p>
 
-		<!-- UNI PROJECTS -->
-		<h1>Notable University Projects</h1>
-
-		<p>Neural Machine Translation, German - English (Deep Learning, DTU)</p>
-		<ul>
-			<li><a href="https://github.com/thomasnilsson/02456-handin-s144470/blob/master/02456_project.pdf">Paper</a>
-			</li>
-			<li><a href="https://github.com/thomasnilsson/02456-handin-s144470/blob/master/02456-poster.pdf">Poster</a>
-			</li>
-			<li><a
-					href="https://github.com/thomasnilsson/02456-handin-s144470/blob/master/02456_transformer_translation.ipynb">Notebook</a>
-			</li>
-		</ul>
-		<p>Sentiment Analysis (Computational Intelligence Lab, ETH Zurich)</p>
-		<ul>
-			<li><a href="data/grad-student-descent-report.pdf">Paper (PDF)</a></li>
-			<li><a href="https://github.com/thomasnilsson/cil-2019/tree/master/project/grad-student-descent-code">Python
-					Source Code (Github)</a></li>
-		</ul>
-		<p>Predicting the End of a Story (Natural Language Understanding, ETH Zurich)</a></p>
-		<ul>
-			<li><a href="data/nlu_project_2.pdf">Paper (PDF)</a></li>
-			<li><a href="https://github.com/thomasnilsson/nlu-2019/tree/master/project-2">Python Source Code
-					(Github)</a></li>
-		</ul>
-		<p>D3 Visualizations (Social Data Analysis, DTU)</p>
-		<ul>
-			<li><a href="https://thomasnilsson.github.io/02806/PROJECT/">New York City Vehicle
-					Collisions</a></li>
-		</ul>
-		<p>Network Analysis (Social Graphs, DTU)</p>
-		<ul>
-			<li><a href="https://thomasnilsson.github.io/02805-social-graphs-2018/">Yelp Elite Users in
-					Toronto</a></li>
-		</ul>
-		<p>MRI Heart Volume Prediction (Quantitative Big Imaging, ETH Zurich)</p>
-		<ul>
-			<li><a href="data/qbi_slides.pdf">Predicting Heart Volume from MRI (Slides)</a></li>
-			<li><a href="https://www.kaggle.com/tnilsson/qbi-preprocessing">Preprocessing Notebook</a></li>
-			<li><a href="https://www.kaggle.com/tnilsson/qbi-train-network">Model Training Notebook</a></li>
-			<li><a href="https://www.kaggle.com/tnilsson/qbi-validate-network">Model Validation Notebook</a>
-			</li>
-		</ul>
-	</article>
-
-
-	<script src="particles.js"></script>
-	<script src="app.js"></script>
+		For a list of interesting, curated projects I have partaken in, check out my <a href="projects.html">list of
+			projects</a> and my <a href="https://github.com/thomasnilsson">Github page</a>.
+	</div>
 
 
 </html>
